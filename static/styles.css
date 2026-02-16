@@ -1,0 +1,64 @@
+/* Ducati-inspired theme: deep red, black, and clean white text */
+:root{
+  --primary: #D71A14; /* Ducati red */
+  --dark: #0f0f0f; /* deep background */
+  --muted: #6b6b6b;
+  --surface: #121212;
+  --card: #1a1a1a;
+  --accent: #ffffff;
+}
+
+body { background: linear-gradient(180deg,#070707 0%, #0b0b0b 100%); color: #fff; }
+
+.header-hero{ padding: 28px 16px; background: linear-gradient(90deg, rgba(225,16,0,0.06), rgba(0,0,0,0.0)); border-bottom: 1px solid rgba(255,255,255,0.03);}
+.header-hero h1{ color: #fff; margin: 0; font-weight:700; letter-spacing:0.4px }
+.header-hero p{ color: rgba(255,255,255,0.75); margin-top:6px }
+
+body {
+  background: linear-gradient(180deg, #0b0b0b 0%, #121212 100%);
+  color: var(--accent);
+}
+
+.kpi-card{ background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01)); border-radius:8px; padding:12px; }
+.kpi-value{ font-size:20px; font-weight:700; color:var(--accent); }
+.kpi-label{ color: #cfcfcf; font-size:12px }
+
+.sidebar .stButton>button{ background: var(--accent); border:none; color:#fff; }
+
+.stDataFrame table{ background: transparent; color: #fff }
+
+/* small responsive tweaks */
+@media (max-width: 768px){ .header-hero{ text-align:center } }
+
+/* Sidebar tweaks */
+.stSidebar {
+  background: linear-gradient(180deg, #0b0b0b 0%, #121212 100%);
+  border-right: 1px solid rgba(255,255,255,0.03);
+}
+
+.stSidebar h2, .stSidebar h3, .stSidebar .css-1v3fvcr {
+  color: var(--accent);
+}
+
+/* Cards / dataframes */
+.stDataFrameContainer, .element-container {
+  background: transparent;
+}
+
+/* Metrics */
+.stMetric > div {
+  color: var(--accent);
+}
+
+/* Make Plotly charts blend */
+.stPlotlyChart > div {
+  background: transparent !important;
+}
+
+/* Links and interactive */
+a { color: var(--primary); }
+
+/* Small responsive tweaks */
+@media (max-width: 768px) {
+  .header-hero h1 { font-size: 28px; }
+}
