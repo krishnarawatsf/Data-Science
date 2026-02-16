@@ -16,4 +16,4 @@ ENV PORT=8501
 EXPOSE 8501
 
 # Use shell form so the $PORT env var is expanded at runtime
-CMD bash -lc "streamlit run app.py --server.port $PORT --server.headless true --server.enableCORS false"
+CMD bash -lc "streamlit run app.py --server.port $PORT --server.address 0.0.0.0 --server.headless true --server.enableCORS false"
